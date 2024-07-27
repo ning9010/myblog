@@ -3,9 +3,10 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // lang: 'zh', 
+  base: '/myblog/',
   title: "编程学习",
   head: [
-    ['link', { rel: 'icon', href: '/index.png' }],
+    ['link', { rel: 'icon', href: '/myblog/index.png' }],
   ],
   description: "A VitePress Site",
   themeConfig: {
