@@ -4,14 +4,14 @@ layout: home
 hero:
   name: "编程学习"
   text: ""
-  tagline: 编程学习笔记
+  tagline: 笔记文档
   image:
     src: /文档.png
     alt: VitePress
   actions:
     - theme: brand
-      text: 编程语言
-      link: /编程语言/
+      text: Program
+      link: /program/
     - theme: alt
       text: Tools
       link: /Tools/

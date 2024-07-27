@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // lang: 'zh', 
   base: '/myblog/',
   title: "编程学习",
   head: [
@@ -16,21 +15,14 @@ export default defineConfig({
       {
         text: '编程语言',
         items: [
-          { text: '目录', link: '/编程语言/' },
-          { text: 'C#', link: '/编程语言/CSharp/CSharp笔记' },
-          { text: 'Golang', link: '/编程语言/Golang/Golang' },
-          { text: 'JavaScript', link: '/编程语言/JavaScript/JavaScript' },
-          { text: 'Python', link: '/编程语言/Python/Python' },
+          { text: 'CSharp', link: '/编程语言/CSharp/' },
+          { text: 'Golang', link: '/编程语言/Golang/' },
+          { text: 'JavaScript', link: '/编程语言/JavaScript/' },
+          { text: 'Python', link: '/编程语言/Python/' },
         ]
       },
-      {
-        text: 'Tools',
-        items: [
-          { text: '目录', link: '/Tools/' },
-          { text: 'Vitepress', link: '/Tools/Vitepress笔记' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      { text: 'Program', link: '/program/' },
+      { text: 'Tools', link: '/Tools/' },
     ],
     search: {
       provider: 'local',
@@ -39,36 +31,56 @@ export default defineConfig({
     sidebar: {
       '/编程语言/CSharp/': [
         {
-          text: 'CSharp',
-          collapsed: true,
+          text: 'C#',
+          collapsed: false,
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
+            { text: 'C# index', link: '/编程语言/CSharp/' },
+            { text: 'C#笔记', link: '/编程语言/CSharp/CSharp笔记' },
           ]
         },
       ],
       '/编程语言/Golang/': [{
         text: 'Golang笔记',
-        collapsed: true,
         items: [
+          { text: 'index', link: '/编程语言/Golang/' },
           { text: 'Golang', link: '/编程语言/Golang/Golang' },
           { text: 'Golang2', link: '/编程语言/Golang/Golang2' },
         ]
       }],
       '/编程语言/JavaScript/': [{
         text: 'JavaScript笔记',
-        collapsed: true,
         items: [
+          { text: 'index', link: '/编程语言/JavaScript/' },
           { text: 'JavaScript', link: '/编程语言/JavaScript/JavaScript' },
+          { text: 'axios', link: '/编程语言/JavaScript/axios' },
           { text: 'vitepress', link: '/编程语言/JavaScript/vitepress' },
         ]
       }],
       '/编程语言/Python/': [{
-        text: 'Golang笔记',
-        collapsed: true,
+        text: 'Python笔记',
         items: [
-          { text: 'Golang', link: '/编程语言/Golang/Golang' },
-          { text: 'Golang2', link: '/编程语言/Golang/Golang2' },
+          { text: 'Python', link: '/编程语言/Python/' },
+          { text: 'Python2', link: '/编程语言/Python/Python' },
+        ]
+      }],
+
+      '/program/': [{
+        text: 'program',
+        collapsed: false,
+        items: [
+          { text: '目录', link: '/program/' },
+          { text: 'program', link: '/program/program' },
+        ]
+      }],
+
+      '/Tools/': [{
+        text: 'Tools',
+        collapsed: false,
+        items: [
+          { text: '目录', link: '/Tools/' },
+          { text: 'Vitepress', link: '/Tools/Vitepress笔记' },
+          { text: 'Docker', link: '/Tools/Docker' },
+          { text: 'Markdown', link: '/Tools/Markdown语法' },
         ]
       }]
     },
@@ -97,7 +109,7 @@ export default defineConfig({
 
     outline: {
       label: '页面导航',
-      level: [2, 3]
+      level: [2, 4]
     },
   }
 })

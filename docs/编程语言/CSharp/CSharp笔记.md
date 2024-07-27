@@ -1,8 +1,3 @@
----
-lastUpdated: true,
-outline: deep
----
-
 # 基础语法
 
 ## 面向对象
