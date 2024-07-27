@@ -43,6 +43,7 @@ export default defineConfig({
         text: 'Golang笔记',
         items: [
           { text: 'index', link: '/编程语言/Golang/' },
+          { text: 'go语法', link: '/编程语言/Golang/go语法' },
           { text: 'Golang', link: '/编程语言/Golang/Golang' },
           { text: 'Golang2', link: '/编程语言/Golang/Golang2' },
         ]
