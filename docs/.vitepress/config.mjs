@@ -26,6 +26,7 @@ export default defineConfig({
         text: 'Tools',
         items: [
           { text: '目录', link: '/Tools/' },
+          { text: 'Vitepress', link: '/Tools/Vitepress笔记' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
@@ -72,24 +73,27 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ning9010' }
+      { icon: 'github', link: 'https://github.com/ning9010/myblog' }
     ],
 
     footer: {
-      message: '本站点由 <a href="https://vitepress.dev/">vitepress</a> 生成。',
+      message: '本网页由 <a href="https://vitepress.dev/">vitepress</a> 生成。',
       copyright: 'Copyright © 2024 '
     },
+
     docFooter: {
       prev: '上一页',
       next: '下一页'
     },
+
     lastUpdated: {
       text: '最后更新时间',
       formatOptions: {
-        dateStyle: 'full',
+        dateStyle: 'short',
         timeStyle: 'medium'
       }
     },
+
     outline: {
       label: '页面导航',
       level: [2, 3]
