@@ -11,7 +11,6 @@ export default defineConfig({
   ],
   description: "A VitePress Site",
   cleanUrls: true,
-  ignoreDeadLinks: true,
   appearance: 'dark',
   themeConfig: {
     logo: '/index.png',
