@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '编程语言',
+        text: '语言',
         items: [
           { text: 'CSharp', link: '/编程语言/CSharp/' },
           { text: 'Golang', link: '/编程语言/Golang/' },
@@ -21,11 +21,28 @@ export default defineConfig({
           { text: 'Python', link: '/编程语言/Python/' },
         ]
       },
-      { text: 'Program', link: '/program/' },
+      { text: 'Application', link: '/Application/' },
       { text: 'Tools', link: '/Tools/' },
     ],
     search: {
       provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+            buttonAriaLabel: "搜索文档",
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+              closeText: "关闭",
+            },
+          },
+        }
+      }
     },
 
     sidebar: {
@@ -45,7 +62,7 @@ export default defineConfig({
           { text: 'index', link: '/编程语言/Golang/' },
           { text: 'go语法', link: '/编程语言/Golang/go语法' },
           { text: 'Golang', link: '/编程语言/Golang/Golang' },
-          { text: 'Golang2', link: '/编程语言/Golang/Golang2' },
+          { text: 'Golang2', link: '/api-examples.md' },
         ]
       }],
       '/编程语言/JavaScript/': [{
@@ -65,12 +82,12 @@ export default defineConfig({
         ]
       }],
 
-      '/program/': [{
-        text: 'program',
+      '/Application/': [{
+        text: 'Application',
         collapsed: false,
         items: [
-          { text: '目录', link: '/program/' },
-          { text: 'program', link: '/program/program' },
+          { text: '目录', link: '/Application/' },
+          { text: 'Application', link: '/Application/Application' },
         ]
       }],
 
