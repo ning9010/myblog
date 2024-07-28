@@ -2,12 +2,17 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-CN',
   base: '/myblog/',
   title: "编程学习",
+  titleTemplate: '编程学习 - :title',
   head: [
     ['link', { rel: 'icon', href: '/myblog/index.png' }],
   ],
   description: "A VitePress Site",
+  cleanUrls: true,
+  ignoreDeadLinks: true,
+  appearance: 'dark',
   themeConfig: {
     logo: '/index.png',
     nav: [
@@ -58,6 +63,7 @@ export default defineConfig({
       ],
       '/编程语言/Golang/': [{
         text: 'Golang笔记',
+        collapsed: false,
         items: [
           { text: 'index', link: '/编程语言/Golang/' },
           { text: 'go语法', link: '/编程语言/Golang/go语法' },
@@ -67,6 +73,7 @@ export default defineConfig({
       }],
       '/编程语言/JavaScript/': [{
         text: 'JavaScript笔记',
+        collapsed: false,
         items: [
           { text: 'index', link: '/编程语言/JavaScript/' },
           { text: 'JavaScript', link: '/编程语言/JavaScript/JavaScript' },
@@ -76,6 +83,7 @@ export default defineConfig({
       }],
       '/编程语言/Python/': [{
         text: 'Python笔记',
+        collapsed: false,
         items: [
           { text: 'Python', link: '/编程语言/Python/' },
           { text: 'Python2', link: '/编程语言/Python/Python' },
@@ -123,6 +131,11 @@ export default defineConfig({
         dateStyle: 'short',
         timeStyle: 'medium'
       }
+    },
+
+    editLink: {
+      text: '在 GitHub 上编辑此页面',
+      pattern: 'https://github.com/ning9010/myblog/edit/main/docs/:path'
     },
 
     outline: {
