@@ -135,3 +135,5 @@ chrome.windows.create(
 - **app**: 应用窗口，用于 Chrome 应用程序。
 
 - **devtools**: 开发者工具窗口，用于打开 Chrome 的开发者工具。
+
+### 快捷键 commands
