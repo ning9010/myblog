@@ -63,6 +63,75 @@
 ```
 
 
-### Title  <Badge type="warning" text="beta" >w</Badge>
+### 地址栏注册关键字
+
+用户输入扩展程序的关键字后，该用户开始仅与您的扩展程序互动。每次按键都会发送到您的扩展程序，您可以在响应中提供建议。
+
+[官网api 网址](https://developer.chrome.com/docs/extensions/reference/api/omnibox?hl=zh-cn)
+
+```json
+{
+  "name": "Aaron's omnibox extension",
+  "version": "1.0",
+  "omnibox": { "keyword" : "aaron" },
+  "icons": {
+    "16": "16-full-color.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}
+```
+>Chrome 会自动创建 16x16 像素的图标的灰度版本。您应提供全彩版本，以便在其他需要颜色的情形中使用。例如，上下文菜单 API 也使用 16x16 像素的图标，但该图标是彩色的。
+
+在background监听
+- onDeleteSuggestion 用户删除了建议的结果。
+- onInputCancelled 用户已结束关键字输入会话，但不接受输入。
+- onInputChanged 用户更改了在多功能框中输入的内容。
+- onInputEntered 用户已接受在多功能框中输入的内容。
+- onInputStarted 用户已通过输入该扩展程序的关键字启动了关键字输入会话。这保证在每个输入会话之前且在任何 onInputChanged 事件之前仅发送一次。
+ 
+```js
+chrome.omnibox.onDeleteSuggestion.addListener(
+  callback: function,
+)
+```
+callback 参数
+```js
+callback:() => void
+```
 
 
+
+### 新建窗口，打开网址
+>创建一个新窗口，并在上面打开所有网址。
+```js
+chrome.windows.create({ 
+  url: urls, 
+  CreateType: 'normal' 
+});
+
+chrome.windows.create(
+  createData: {
+    focused: false, 
+    incognito: false, 
+    ...
+  },
+  callback?: function,
+)
+```
+
+在使用 chrome.windows.create 方法时，可以通过 CreateType 参数指定新窗口的类型。以下是 CreateType 参数可选的值及其含义：
+
+- **normal**: 普通窗口，可以调整大小和位置，通常是默认值。
+
+- **popup**: 弹出窗口，通常没有地址栏和工具栏。
+
+- **panel**: 面板窗口，通常在浏览器的侧边显示，具有较小的大小。
+
+- **detached_panel**: 分离的面板窗口，类似于 "panel"，但可以在浏览器外部独立显示。
+
+- **app**: 应用窗口，用于 Chrome 应用程序。
+
+- **devtools**: 开发者工具窗口，用于打开 Chrome 的开发者工具。
