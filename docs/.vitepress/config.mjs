@@ -94,7 +94,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '目录', link: '/Application/' },
-          { text: 'Application', link: '/Application/Application' },
+          { text: 'Chrome Extensions', link: '/Application/ChromeExtensions' },
         ]
       }],
 
