@@ -122,6 +122,7 @@ chrome.windows.create(
 )
 ```
 
+
 在使用 chrome.windows.create 方法时，可以通过 CreateType 参数指定新窗口的类型。以下是 CreateType 参数可选的值及其含义：
 
 - **normal**: 普通窗口，可以调整大小和位置，通常是默认值。
@@ -153,3 +154,58 @@ chrome.windows.create(
 个性化用户体验：
 
 5. 可以根据用户在浏览器中的活动习惯或者偏好，动态调整扩展的功能和界面，使扩展更符合用户的个性化需求。
+
+### Chrome 插件 API 说明
+Chrome 提供了丰富的 API，用于开发强大的 Chrome 扩展程序，以下是一些常用的 Chrome 插件 API：
+
+1. **chrome.storage API**:
+  - 用于在扩展程序中存储、检索和跟踪数据。
+  - 可以使用不同的存储区域，如同步存储和本地存储。
+
+2. **chrome.tabs API**:
+  - 用于管理浏览器标签页，包括创建、更新、关闭标签页等操作。
+  - 可以获取当前标签页的信息和操作。
+
+3. **chrome.runtime API**:
+  - 用于与 Chrome 运行时通信，包括扩展程序的生命周期管理、消息传递等功能。
+
+4. **chrome.webRequest API**:
+  - 用于监视和分析网络请求，可以拦截、修改和阻止网络请求。
+
+5. **chrome.notifications API**:
+  - 用于创建桌面通知，向用户显示通知消息。
+
+6. **chrome.identity API**:
+  - 用于进行用户身份验证，包括 OAuth2 认证等功能。
+
+7. **chrome.contextMenus API**:
+  - 用于在浏览器右键菜单中添加自定义菜单项。
+
+8. **chrome.alarms API**:
+  - 用于创建定时器，执行后台任务。
+
+### 其他常用 Chrome 插件 API 包括：
+9. **chrome.browserAction API**:
+  - 用于管理浏览器工具栏上的扩展图标，包括设置图标、工具提示等。
+10. **chrome.pageAction API**:
+  - 用于根据当前页面的条件显示或隐藏扩展图标。
+11. **chrome.cookies API**:
+  - 用于管理浏览器的 Cookie，包括读取、创建、修改和删除 Cookie。
+12. **chrome.history API**:
+  - 用于访问用户的浏览历史记录，可以搜索、删除历史记录等。
+13. **chrome.webNavigation API**:
+  - 用于管理浏览器的导航行为，可以监听页面加载事件、重定向等。
+14. **chrome.webRequest API**:
+  - 用于监视和分析网络请求，可以拦截、修改和阻止网络请求。
+15. **chrome.runtime API**:
+  - 用于与 Chrome 运行时通信，包括扩展程序的生命周期管理、消息传递等功能。
+16. **chrome.i18n API**:
+  - 用于国际化和本地化扩展程序，支持多语言的扩展开发。
+17. **chrome.permissions API**:
+  - 用于请求和检查扩展程序的权限，可以动态请求权限以执行特定操作。
+18. **chrome.notifications API**:
+  - 用于创建桌面通知，向用户显示通知消息。
+19. **chrome.identity API**:
+  - 用于进行用户身份验证，包括 OAuth2 认证等功能。
+20. **chrome.contextMenus API**:
+  - 用于在浏览器右键菜单中添加自定义菜单项。
