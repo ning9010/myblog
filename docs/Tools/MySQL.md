@@ -26,13 +26,13 @@
 
 - 查询
 
-​		查询所有数据库		
+​查询所有数据库		
 
 ```sql
 SHOW DATABASES;
 ```
 
-​		查询当前数据库
+​查询当前数据库
 
 ```sql
 SHOW DATABASE();
@@ -331,3 +331,7 @@ SELECT
         ELSE 'Default'
     END;
 ```
+
+## 索引
+
+## 优化

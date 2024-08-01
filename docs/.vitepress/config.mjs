@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
   base: '/myblog/',
@@ -55,8 +54,13 @@ export default defineConfig({
           text: 'C#',
           collapsed: false,
           items: [
-            { text: 'C# index', link: '/编程语言/CSharp/' },
-            { text: 'C#笔记', link: '/编程语言/CSharp/CSharp笔记' },
+            { text: '目录', link: '/编程语言/CSharp/' },
+            { text: '基础语法', link: '/编程语言/CSharp/01.语法' },
+            { text: '进阶', link: '/编程语言/CSharp/02.进阶' },
+            { text: '高级', link: '/编程语言/CSharp/03.高级' },
+            { text: 'excel', link: '/编程语言/CSharp/04.excel' },
+            { text: 'WPF', link: '/编程语言/CSharp/05.WPF' },
+            { text: 'sqlite', link: '/编程语言/CSharp/06.sqlite' },
           ]
         },
       ],
@@ -85,7 +89,9 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Python', link: '/编程语言/Python/' },
-          { text: 'Python2', link: '/编程语言/Python/Python' },
+          { text: 'utils', link: '/编程语言/Python/Python' },
+          { text: 'numpy', link: '/编程语言/Python/numpy' },
+          { text: 'pandas', link: '/编程语言/Python/pandas' },
         ]
       }],
 
@@ -107,6 +113,8 @@ export default defineConfig({
           { text: 'Vitepress', link: '/Tools/Vitepress笔记' },
           { text: 'Docker', link: '/Tools/Docker' },
           { text: 'Markdown', link: '/Tools/Markdown语法' },
+          { text: 'markdown-examples', link: '/Tools/markdown-examples' },
+          { text: 'api-examples', link: '/Tools/api-examples' },
         ]
       }]
     },

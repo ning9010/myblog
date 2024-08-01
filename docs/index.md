@@ -40,5 +40,5 @@ features:
       src: /python-logo.png
     details:  lets you work quickly and integrate systems more effectively.
     linkText: 进入笔记
-    link: /编程语言/Python/Python
+    link: /编程语言/Python/
 ---
