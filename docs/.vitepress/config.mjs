@@ -103,6 +103,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '目录', link: '/Tools/' },
+          { text: 'MySQL', link: '/Tools/MySQL' },
           { text: 'Vitepress', link: '/Tools/Vitepress笔记' },
           { text: 'Docker', link: '/Tools/Docker' },
           { text: 'Markdown', link: '/Tools/Markdown语法' },
