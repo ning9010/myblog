@@ -5,14 +5,14 @@
 
 - 创建虚拟环境目录
 
-  ```cmd
+  ```bash
   mkdir [virtaulenv] // virtaulenv 自定义文件名
   python -m venv [virtualenv] // virtaulenv 虚拟环境名
   ```
   
 - 启动虚拟环境
 
-  ```cmd
+  ```bash
   # linux
   source venv/bin/activate
   # windows
@@ -21,13 +21,13 @@
 
 - 退出虚拟环境
 
-  ```cmd
+  ```bash
   deactivate
   ```
 
 - 虚拟环境更新升级
 
-```cmd
+```bash
 python -m venv myvenv --upgrade
 ```
 
@@ -35,13 +35,13 @@ python -m venv myvenv --upgrade
 
 - 生成```requirements.txt```文件
 
-```python
+```bash
 pip freeze > requirements.txt # 在根目录下生成
 pip freeze > C:/requirements.txt # 在自定义目录下生成
 ```
 
 - 安装```requirements.txt```中的库
 
-```python
+```bash
 pip install -r requirements.txt
 ```
