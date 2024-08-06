@@ -73,6 +73,7 @@ export default defineConfig({
           { text: 'go语法', link: '/编程语言/Golang/go语法' },
           { text: 'Golang', link: '/编程语言/Golang/Golang' },
           { text: 'Golang2', link: '/api-examples.md' },
+          { text: 'gin', link: '/编程语言/Golang/gin.md' },
         ]
       }],
       '/编程语言/JavaScript/': [{
