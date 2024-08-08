@@ -62,6 +62,7 @@ export default defineConfig({
             { text: 'WPF', link: '/编程语言/CSharp/05.WPF' },
             { text: 'sqlite', link: '/编程语言/CSharp/06.sqlite' },
             { text: '正则', link: '/编程语言/CSharp/07.正则' },
+            { text: '图片', link: '/编程语言/CSharp/图片' },
           ]
         },
       ],
